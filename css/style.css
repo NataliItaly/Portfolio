@@ -140,9 +140,6 @@ section {
   background-image: url(../assets/img/header-bg.jpg);
   background-position: center -90px;
   background-repeat: no-repeat;
-  /*-------------------------------------------------------------------------------------*/
-  /*background-size: cover;*/
-  /*_------------------------------------------------------------------------------------*/
   position: relative;
 }
 .hero-title {
@@ -242,19 +239,21 @@ section {
 
 .skills .section-title::before,
 .skills .section-title::after {
-  width: 274px;
+  width: 250px;
 }
 .skills-items-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 60px;
 }
 .skills-item {
   width: 320px;
-  height: 240px;
+  height: 270px;
   margin: 0;
+  margin-bottom: 36px;
+  padding-bottom: 40px;
 }
 .skills-item-title {
   text-align: center;
@@ -274,7 +273,7 @@ section {
 }
 .portfolio .section-title::before,
 .portfolio .section-title::after {
-  width: 240px;
+  width: 210px;
 }
 .portfolio-btn-wrapper {
   margin: 60px auto;
@@ -284,9 +283,6 @@ section {
   gap: 5px;
 }
 .portfolio-btn-wrapper .button {
-  /*______________-----------------------------------------------------------------------*/
-
-  /*______________-----------------------------------------------------------------------*/
   margin-top: 0;
 }
 .active-btn {
@@ -298,6 +294,7 @@ section {
   border: 1px solid #a1946d;
   color: #a1946d;
 }
+/* 
 .bubbly-button {
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
@@ -368,11 +365,7 @@ section {
     radial-gradient(circle, var(--color-gold) 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
-.bubbly-button:hover {
-  transform: scale(0.9);
-  background-color: var(--color-gold);
-  box-shadow: 0 2px 25px var(--color-gold);
-}
+
 .bubbly-button.animate:before {
   display: block;
   animation: topBubbles ease-in-out 0.75s forwards;
@@ -410,6 +403,119 @@ section {
       110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
+} */
+
+.winter,
+.spring,
+.autumn,
+.summer {
+  position: relative;
+}
+
+.winter.animate::after,
+.spring.animate::after,
+.summer.animate::after,
+.autumn.animate::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+.winter.animate::after {
+  display: none;
+  background-image: url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png"),
+    url("../assets/img/portfolio/winter-icon.png");
+  background-size: 30px 30px;
+}
+
+.spring.animate::after {
+  background-image: url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png"),
+    url("../assets/img/portfolio/spring-icon.png");
+  background-size: 30px 30px;
+}
+
+.summer.animate::after {
+  background-image: url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png"),
+    url("../assets/img/portfolio/summer-icon.png");
+  background-size: 30px 30px;
+}
+
+.autumn.animate::after {
+  background-image: url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png"),
+    url("../assets/img/portfolio/autumn-icon.png");
+  background-size: 30px 30px;
+}
+
+.winter.animate::after,
+.spring.animate::after,
+.summer.animate::after,
+.autumn.animate::after {
+  display: block;
+  z-index: 10;
+  animation: rightAnimation ease-in-out 0.75s forwards;
+}
+
+@keyframes rightAnimation {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 0% 80%, 25% 30%, 45% 60%, 80% 98%, 60% 90%, 98% 30%,
+      10% 70%, 15% 25%, 55% 70%, 75% 30%, 65% 85%, 85% 30%;
+  }
+  100% {
+    background-position: 0% 90%, 28% 40%, 45% 70%, 75% 80%, 55% 100%, 100% 40%,
+      0% 90%, 28% 40%, 45% 70%, 75% 80%, 55% 100%, 100% 40%;
+    background-size: 0% 0%;
+  }
 }
 
 .winter {
@@ -437,15 +543,10 @@ section {
   width: 450px;
   height: 560px;
 }
-/*--------------------------------------------------------------------------------
-.portfolio-item:nth-child(1),
-.portfolio-item:nth-child(2),
-.portfolio-item:nth-child(3) {
-  margin-bottom: 23px;
-}--------------------------------------------------------------------------------*/
+
 .video .section-title::before,
 .video .section-title::after {
-  width: 278px;
+  width: 270px;
 }
 .video-wrapper {
   width: 100%;
@@ -545,7 +646,7 @@ section {
   transition: 0.6s;
 }
 .price-item:hover {
-  transform: scale(1.1);
+  box-shadow: 0 0 10px #a1946d;
 }
 .price-item-title {
   font-family: Merriweather;

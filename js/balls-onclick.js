@@ -1,6 +1,6 @@
- //пузырьки при нажатии кнопки
+//пузырьки при нажатии кнопки
 
-    /*// ***** Fancy button animation *****
+/*// ***** Fancy button animation *****
 
 const animatedButtons = document.querySelectorAll('.button-animation');
 
@@ -16,7 +16,7 @@ animatedButtons.forEach((elem) => {
   })
 });
  */
-const animatedBtn = document.querySelectorAll('.animated-btn');
+const animatedBtn = document.querySelectorAll(".season-btn");
 /* animatedBtn.forEach((elem) => {
     elem.addEventListener('click', (event) => {
       let buttonPressed = event.target;
@@ -29,9 +29,8 @@ const animatedBtn = document.querySelectorAll('.animated-btn');
     })
   }); */
 
-
-  // ---------photo camera come and flASH animation----------
-  /*
+// ---------photo camera come and flASH animation----------
+/*
 .big-button__cameraSvg{
     position: absolute;
     left:-100px;
@@ -78,25 +77,21 @@ const animatedBtn = document.querySelectorAll('.animated-btn');
     -o-transition: transform 0.1s ease-in;
 } */
 
-
-
-
 //-----------splash from mouse over-------------------
 
-var animateButton = function(e) {
+var animateButton = function (e) {
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove("animate");
 
-    e.preventDefault;
-    //reset animation
-    e.target.classList.remove('animate');
-    
-    e.target.classList.add('animate');
-    setTimeout(function(){
-      e.target.classList.remove('animate');
-    },700);
-  };
-  
-  var bubblyButtons = document.getElementsByClassName("bubbly-button");
-  
-  for (var i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('mouseover', animateButton);
-  }
+  e.target.classList.add("animate");
+  setTimeout(function () {
+    e.target.classList.remove("animate");
+  }, 700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+  bubblyButtons[i].addEventListener("mouseover", animateButton);
+}

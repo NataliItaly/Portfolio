@@ -1,222 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/camera.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;700&family=Petemoss&family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&family=Open+Sans:wght@400;700&family=Petemoss&family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/preloader.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/light-theme.css">
-    <link rel="stylesheet" href="css/balls-onclick.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/camera.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;700&family=Petemoss&family=Poppins:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&family=Open+Sans:wght@400;700&family=Petemoss&family=Poppins:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/light-theme.css" />
+    <link rel="stylesheet" href="css/balls-onclick.css" />
     <title>Portfolio</title>
     <!-- <script src="js/preloader.js"></script> -->
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-       <div class="container">
-            <div class="logo">
-            </div>
-            <nav class="header-nav">
-                <ul class="nav-list">
-                    <li><a href="#skills" class="nav-link" data-transcription = "skills">Skills</a></li>
-                    <li><a href="#portfolio" class="nav-link" data-transcription = "portfolio">Portfolio</a></li>
-                    <li><a href="#video" class="nav-link" data-transcription = "video">Video</a></li>
-                    <li><a href="#price" class="nav-link" data-transcription = "price">Price</a></li>
-                    <li><a href="#contacts" class="nav-link" data-transcription = "contacts">Contacts</a></li>
-                </ul>
-            </nav>
-            <div class="switch">
-                <button class="switch-btn current-language" data-language = "en">en</button>
-                <span class="switch-span">/</span> 
-                <button class="switch-btn" data-language="ru">ru</button>
-            </div>
-            <div class="theme-btn"></div>
-            <div class="burger">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </div>
+      <div class="container">
+        <div class="logo"></div>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#skills" class="nav-link" data-transcription="skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="nav-link"
+                data-transcription="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#video" class="nav-link" data-transcription="video"
+                >Video</a
+              >
+            </li>
+            <li>
+              <a href="#price" class="nav-link" data-transcription="price"
+                >Price</a
+              >
+            </li>
+            <li>
+              <a href="#contacts" class="nav-link" data-transcription="contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="switch">
+          <button class="switch-btn current-language" data-language="en">
+            en
+          </button>
+          <span class="switch-span">/</span>
+          <button class="switch-btn" data-language="ru">ru</button>
         </div>
+        <div class="theme-btn"></div>
+        <div class="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+      </div>
     </header>
 
     <main>
-
-        <section class="hero" id="hero">
-            <div class="container">
-                <div class="hero-wrapper">
-                    <h1 class="hero-title" data-transcription = "hero-title">Alexa Rise</h1>
-                    <div class="hero-text" data-transcription = "hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</div>
-                    <button class="button gold-btn test" data-transcription = "hire">Hire me</button>
-                </div>
-                
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <h1 class="hero-title" data-transcription="hero-title">
+              Alexa Rise
+            </h1>
+            <div class="hero-text" data-transcription="hero-text">
+              Save sincere emotions, romantic feelings and happy moments of life
+              together with professional photographer Alexa Rise
             </div>
-        </section>
+            <button class="button gold-btn test" data-transcription="hire">
+              Hire me
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <section class="skills" id="skills">
-            <div class="container">
-                <h2 class="section-title" data-transcription = "skills">Skills</h2>
-                <div class="skills-items-wrapper">
-                    <div class="skills-item">
-                        <img class="skills-item-img" src="assets/svg/skills/1camera.svg" alt="">
-                        <h4 class="skills-item-title" data-transcription = "skill-title-1">Digital photography</h4>
-                        <p class="skills-item-text" data-transcription = "skill-text-1">High-quality photos in the studio and on the nature</p>
-                    </div>
-                    <div class="skills-item">
-                        <img class="skills-item-img" src="assets/svg/skills/2video.svg" alt="">
-                        <h4 class="skills-item-title" data-transcription = "skill-title-2">Video shooting</h4>
-                        <p class="skills-item-text" data-transcription = "skill-text-2">Capture your moments so that they always stay with you</p>
-                    </div>
-                    <div class="skills-item">
-                        <img class="skills-item-img" src="assets/svg/skills/3image.svg" alt="">
-                        <h4 class="skills-item-title" data-transcription = "skill-title-3">Retouch</h4>
-                        <p class="skills-item-text" data-transcription = "skill-text-3">I strive to make photography surpass reality</p>
-                    </div>
-                    <div class="skills-item">
-                        <img class="skills-item-img" src="assets/svg/skills/4mic.svg" alt="">
-                        <h4 class="skills-item-title" data-transcription = "skill-title-4">Audio</h4>
-                        <p class="skills-item-text" data-transcription = "skill-text-4">Professional sounds recording for video, advertising, portfolio</p>
-                    </div>
-                </div>
+      <section class="skills" id="skills">
+        <div class="container">
+          <h2 class="section-title" data-transcription="skills">Skills</h2>
+          <div class="skills-items-wrapper">
+            <div class="skills-item">
+              <img
+                class="skills-item-img"
+                src="assets/svg/skills/1camera.svg"
+                alt=""
+              />
+              <h4 class="skills-item-title" data-transcription="skill-title-1">
+                Digital photography
+              </h4>
+              <p class="skills-item-text" data-transcription="skill-text-1">
+                High-quality photos in the studio and on the nature
+              </p>
             </div>
-        </section>
+            <div class="skills-item">
+              <img
+                class="skills-item-img"
+                src="assets/svg/skills/2video.svg"
+                alt=""
+              />
+              <h4 class="skills-item-title" data-transcription="skill-title-2">
+                Video shooting
+              </h4>
+              <p class="skills-item-text" data-transcription="skill-text-2">
+                Capture your moments so that they always stay with you
+              </p>
+            </div>
+            <div class="skills-item">
+              <img
+                class="skills-item-img"
+                src="assets/svg/skills/3image.svg"
+                alt=""
+              />
+              <h4 class="skills-item-title" data-transcription="skill-title-3">
+                Retouch
+              </h4>
+              <p class="skills-item-text" data-transcription="skill-text-3">
+                I strive to make photography surpass reality
+              </p>
+            </div>
+            <div class="skills-item">
+              <img
+                class="skills-item-img"
+                src="assets/svg/skills/4mic.svg"
+                alt=""
+              />
+              <h4 class="skills-item-title" data-transcription="skill-title-4">
+                Audio
+              </h4>
+              <p class="skills-item-text" data-transcription="skill-text-4">
+                Professional sounds recording for video, advertising, portfolio
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <h2 class="section-title" data-transcription = "portfolio">Portfolio</h2>
-                <div class="portfolio-btn-wrapper">
-                    <button class="button transparent-btn portfolio-btn animated-btn bubbly-button" data-season = "winter" data-transcription = "winter">Winter</button>
-                    <button class="button transparent-btn portfolio-btn animated-btn bubbly-button" data-season = "spring" data-transcription = "spring">Spring</button>
-                    <button class="button transparent-btn portfolio-btn animated-btn bubbly-button" data-season = "summer" data-transcription = "summer">Summer</button>
-                    <button class="button transparent-btn portfolio-btn animated-btn bubbly-button active-btn" data-season = "autumn" data-transcription = "autumn">Autumn</button>
-                </div>
-                <div class="portfolio-items-wrapper">
-                    <div class="portfolio-item"><img src="assets/img/portfolio/autumn/1.jpg" class="portfolio-img" alt=""></div>
-                    <div class="portfolio-item"><img src="assets/img/portfolio/autumn/2.jpg" class="portfolio-img" alt=""></div>
-                    <div class="portfolio-item"><img src="assets/img/portfolio/autumn/3.jpg" class="portfolio-img" alt=""></div>
-                    <div class="portfolio-item"><img src="assets/img/portfolio/autumn/4.jpg" class="portfolio-img" alt=""></div>
-                    <div class="portfolio-item"><img src="assets/img/portfolio/autumn/5.jpg" class="portfolio-img" alt=""></div>
-                    <div class="portfolio-item"><img src="assets/img/portfolio/autumn/6.jpg" class="portfolio-img" alt=""></div>
-                </div>
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="section-title" data-transcription="portfolio">
+            Portfolio
+          </h2>
+          <div class="portfolio-btn-wrapper">
+            <button
+              class="button transparent-btn portfolio-btn season-btn winter"
+              data-season="winter"
+              data-transcription="winter"
+            >
+              Winter
+            </button>
+            <button
+              class="button transparent-btn portfolio-btn season-btn spring"
+              data-season="spring"
+              data-transcription="spring"
+            >
+              Spring
+            </button>
+            <button
+              class="button transparent-btn portfolio-btn season-btn summer"
+              data-season="summer"
+              data-transcription="summer"
+            >
+              Summer
+            </button>
+            <button
+              class="button transparent-btn portfolio-btn season-btn autumn active-btn"
+              data-season="autumn"
+              data-transcription="autumn"
+            >
+              Autumn
+            </button>
+          </div>
+          <div class="portfolio-items-wrapper">
+            <div class="portfolio-item">
+              <img
+                src="assets/img/portfolio/autumn/1.jpg"
+                class="portfolio-img"
+                alt=""
+              />
             </div>
-        </section>
+            <div class="portfolio-item">
+              <img
+                src="assets/img/portfolio/autumn/2.jpg"
+                class="portfolio-img"
+                alt=""
+              />
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="assets/img/portfolio/autumn/3.jpg"
+                class="portfolio-img"
+                alt=""
+              />
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="assets/img/portfolio/autumn/4.jpg"
+                class="portfolio-img"
+                alt=""
+              />
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="assets/img/portfolio/autumn/5.jpg"
+                class="portfolio-img"
+                alt=""
+              />
+            </div>
+            <div class="portfolio-item">
+              <img
+                src="assets/img/portfolio/autumn/6.jpg"
+                class="portfolio-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="video" id="video">
-            <div class="container">
-                <h2 class="section-title" data-transcription = "video">Video</h2>
-                <div class="video-wrapper">
-                    <video src="assets/Video/video.mp4" class="video-player"></video>
-                    <div class="controls">
-                        <div class="controls-play" class="play"></div>
-                        <div class="controls-stop"></div>
-                        <div class="controls-progress">
-                            <input type="range" class="time-progress-bar" name="" id="">
-                        </div>
-                        <div class="controls-volume">
-                            <input type="range" class="volume-progress-bar" name="" id="">
-                        </div>
-                        <div class="controls-timing">00:00</div>
-                        <div class="test"></div>
-                    </div>
-                    <img src="assets/img/video-player.jpg" class="video-poster" alt="video-poster">
-                    <button class="play-btn">
-                        <!--<img src="assets/svg/play-button.svg" alt="play">-->
-                    </button>     
-                </div>
+      <section class="video" id="video">
+        <div class="container">
+          <h2 class="section-title" data-transcription="video">Video</h2>
+          <div class="video-wrapper">
+            <video src="assets/Video/video.mp4" class="video-player"></video>
+            <div class="controls">
+              <div class="controls-play" class="play"></div>
+              <div class="controls-stop"></div>
+              <div class="controls-progress">
+                <input type="range" class="time-progress-bar" name="" id="" />
+              </div>
+              <div class="controls-volume">
+                <input type="range" class="volume-progress-bar" name="" id="" />
+              </div>
+              <div class="controls-timing">00:00</div>
+              <div class="test"></div>
             </div>
-        </section>
+            <img
+              src="assets/img/video-player.jpg"
+              class="video-poster"
+              alt="video-poster"
+            />
+            <button class="play-btn">
+              <!--<img src="assets/svg/play-button.svg" alt="play">-->
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <section class="price" id="price">
-            <div class="container">
-                <h2 class="section-title" data-transcription = "price">Price</h2>
-                <div class="price-items-wrapper">
-                    <div class="price-item">
-                        <h3 class="price-item-title" data-transcription = "price-type-1">Standart</h3>
-                        <p class="how-much">500 $</p>
-                        <div class="price-description">
-                            <p data-transcription = "price-description-1-p-1">One location</p>
-                            <p data-transcription = "price-description-1-p-2">120 photos in color</p>
-                            <p data-transcription = "price-description-1-p-3">12 photos in retouch</p>
-                            <p data-transcription = "price-description-1-p-4">Readiness 2-3 weeks</p>
-                            <p data-transcription = "price-description-1-p-5">Make up, visage</p>
-                        </div>
-                        <button class=" button gold-btn" data-transcription = "order">Order shooting</button>
-                    </div>
-                    <div class="price-item">
-                        <h3 class="price-item-title" data-transcription = "price-type-2">Premium</h3>
-                        <p class="how-much">700 $</p>
-                        <div class="price-description">
-                            <p data-transcription = "price-description-2-p-1">One or two locations</p>
-                            <p data-transcription = "price-description-2-p-2">200 photos in color</p>
-                            <p data-transcription = "price-description-2-p-3">20 photos in retouch</p>
-                            <p data-transcription = "price-description-2-p-4">Readiness 1-2 weeks</p>
-                            <p data-transcription = "price-description-2-p-5">Make up, visage</p>
-                        </div>
-                        <button class=" button gold-btn" data-transcription = "order">Order shooting</button>
-                    </div>
-                    <div class="price-item">
-                        <h3 class="price-item-title" data-transcription = "price-type-3">Gold</h3>
-                        <p class="how-much">1000 $</p>
-                        <div class="price-description">
-                            <p data-transcription = "price-description-3-p-1">Free locations or more</p>
-                            <p data-transcription = "price-description-3-p-2">300 photos in color</p>
-                            <p data-transcription = "price-description-3-p-3">50 photos in retouch</p>
-                            <p data-transcription = "price-description-3-p-4">Readiness 1 week</p>
-                            <p data-transcription = "price-description-3-p-5">Make up, visage, hairstyle</p>
-                        </div>
-                        <button class=" button gold-btn" data-transcription = "order">Order shooting</button>
-                    </div>
-                </div>
+      <section class="price" id="price">
+        <div class="container">
+          <h2 class="section-title" data-transcription="price">Price</h2>
+          <div class="price-items-wrapper">
+            <div class="price-item">
+              <h3 class="price-item-title" data-transcription="price-type-1">
+                Standart
+              </h3>
+              <p class="how-much">500 $</p>
+              <div class="price-description">
+                <p data-transcription="price-description-1-p-1">One location</p>
+                <p data-transcription="price-description-1-p-2">
+                  120 photos in color
+                </p>
+                <p data-transcription="price-description-1-p-3">
+                  12 photos in retouch
+                </p>
+                <p data-transcription="price-description-1-p-4">
+                  Readiness 2-3 weeks
+                </p>
+                <p data-transcription="price-description-1-p-5">
+                  Make up, visage
+                </p>
+              </div>
+              <button class="button gold-btn" data-transcription="order">
+                Order shooting
+              </button>
             </div>
-        </section>
+            <div class="price-item">
+              <h3 class="price-item-title" data-transcription="price-type-2">
+                Premium
+              </h3>
+              <p class="how-much">700 $</p>
+              <div class="price-description">
+                <p data-transcription="price-description-2-p-1">
+                  One or two locations
+                </p>
+                <p data-transcription="price-description-2-p-2">
+                  200 photos in color
+                </p>
+                <p data-transcription="price-description-2-p-3">
+                  20 photos in retouch
+                </p>
+                <p data-transcription="price-description-2-p-4">
+                  Readiness 1-2 weeks
+                </p>
+                <p data-transcription="price-description-2-p-5">
+                  Make up, visage
+                </p>
+              </div>
+              <button class="button gold-btn" data-transcription="order">
+                Order shooting
+              </button>
+            </div>
+            <div class="price-item">
+              <h3 class="price-item-title" data-transcription="price-type-3">
+                Gold
+              </h3>
+              <p class="how-much">1000 $</p>
+              <div class="price-description">
+                <p data-transcription="price-description-3-p-1">
+                  Free locations or more
+                </p>
+                <p data-transcription="price-description-3-p-2">
+                  300 photos in color
+                </p>
+                <p data-transcription="price-description-3-p-3">
+                  50 photos in retouch
+                </p>
+                <p data-transcription="price-description-3-p-4">
+                  Readiness 1 week
+                </p>
+                <p data-transcription="price-description-3-p-5">
+                  Make up, visage, hairstyle
+                </p>
+              </div>
+              <button class="button gold-btn" data-transcription="order">
+                Order shooting
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="contacts">
-            <div class="container">
-                <div class="contacts-container">
-                    <h2 class="section-title"  id="contacts" data-transcription = "contact-me">Contact me</h2>
-                    <form action="mailto:natalinebo2014@yandex.ru">
-                        <input type="email" name="email" id="email" placeholder="E-mail" data-transcription = "email">
-                        <input type="tel" name="phone" id="tel" placeholder="Phone" data-transcription = "phone">
-                        <textarea name="textarea" id="textarea" rows="5" placeholder="Message" data-transcription = "textarea"></textarea>
-                        <button type="submit" class="button gold-btn" data-transcription = "send-message">Send message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts-container">
+            <h2
+              class="section-title"
+              id="contacts"
+              data-transcription="contact-me"
+            >
+              Contact me
+            </h2>
+            <form action="mailto:natalinebo2014@yandex.ru">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                data-transcription="email"
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="tel"
+                placeholder="Phone"
+                data-transcription="phone"
+              />
+              <textarea
+                name="textarea"
+                id="textarea"
+                rows="5"
+                placeholder="Message"
+                data-transcription="textarea"
+              ></textarea>
+              <button
+                type="submit"
+                class="button gold-btn"
+                data-transcription="send-message"
+              >
+                Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-       <div class="container">
-            <div class="footer-data">
-                <a href="#">&#169;</a>
-                <a href="#">2022</a>
-                <a href="https://github.com/NataliItaly" target="_blank">github</a>
-            </div>
-            <div class="rolling-school">
-                <a href="https://rs.school/js/" target="_blank">Rolling Scopes School</a>
-            </div>
-            <div class="social">
-                <a href="#" class="social-items instagram">
-                    <!--<img src="assets/svg/social/1instagram.svg" alt="instagram">-->
-                </a>
-                <a href="#" class="social-items facebook">
-                    <!--<img src="assets/svg/social/2facebook.svg" alt="facebook">-->
-                </a>
-                <a href="" class="social-items twitter">
-                    <!--<img src="assets/svg/social/3twitter.svg" alt="twitter">-->
-                </a>
-                <a href="" class="social-items pinterest">
-                    <!--<img src="assets/svg/social/4pinterest.svg" alt="pinterest">-->
-                </a>
-            </div>
-       </div>
+      <div class="container">
+        <div class="footer-data">
+          <a href="#">&#169;</a>
+          <a href="#">2022</a>
+          <a href="https://github.com/NataliItaly" target="_blank">github</a>
+        </div>
+        <div class="rolling-school">
+          <a href="https://rs.school/js/" target="_blank"
+            >Rolling Scopes School</a
+          >
+        </div>
+        <div class="social">
+          <a href="#" class="social-items instagram">
+            <!--<img src="assets/svg/social/1instagram.svg" alt="instagram">-->
+          </a>
+          <a href="#" class="social-items facebook">
+            <!--<img src="assets/svg/social/2facebook.svg" alt="facebook">-->
+          </a>
+          <a href="" class="social-items twitter">
+            <!--<img src="assets/svg/social/3twitter.svg" alt="twitter">-->
+          </a>
+          <a href="" class="social-items pinterest">
+            <!--<img src="assets/svg/social/4pinterest.svg" alt="pinterest">-->
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script src="js/index.js"></script>
@@ -225,6 +430,6 @@
     <script src="js/translate.js"></script>
     <script src="js/balls-onclick.js"></script>
     <script src="js/video-player.js"></script>
-
-</body>
+    <script src="js/season-animation.js"></script>
+  </body>
 </html>
