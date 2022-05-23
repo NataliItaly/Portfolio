@@ -1,0 +1,107 @@
+:root {
+  --button-spell-color: #e4d9b8;
+  --button-spell-end-color: #61302e;
+}
+
+.portfolio-btn.animate::before {
+  display: block;
+  animation: animationButtonSpells 1 linear 0.7s;
+}
+
+@keyframes animationButtonSpells {
+  0% {
+    background-position: 20px 0px, 230px 0px, 120px 0px, 190px 2px, 205px -3px,
+      52px -4px, 63px 0px, 135px 0px, 162px -5px, 80px -3px;
+    background-size: 15px 15px;
+  }
+  50% {
+    background-position: 5px 60px, 230px 55px, 110px 63px, 172px 70px,
+      215px 45px, 30px 48px, 73px 62px, 147px 70px, 155px 28px, 84px 23px;
+    background-image: radial-gradient(
+        circle,
+        var(--button-spell-color) 2px,
+        transparent 5px
+      ),
+      radial-gradient(
+        circle,
+        var(--button-spell-end-color) 3px,
+        transparent 6px
+      ),
+      radial-gradient(
+        circle,
+        transparent 2px,
+        var(--button-spell-color) 5px,
+        transparent 8px
+      ),
+      radial-gradient(
+        circle,
+        transparent 2px,
+        var(--button-spell-end-color) 3px,
+        transparent 6px
+      ),
+      radial-gradient(circle, var(--button-spell-color) 2px, transparent 10px),
+      radial-gradient(circle, var(--button-spell-color) 2px, transparent 6px),
+      radial-gradient(
+        circle,
+        var(--button-spell-end-color) 2px,
+        transparent 4px
+      ),
+      radial-gradient(circle, var(--button-spell-color) 3px, transparent 5px),
+      radial-gradient(
+        circle,
+        var(--button-spell-end-color) 2px,
+        transparent 5px
+      ),
+      radial-gradient(circle, var(--button-spell-color) 2px, transparent 4px);
+    background-size: 30px 30px;
+  }
+  100% {
+    background-position: 15px 100px, 227px 87px, 130px 105px, 190px 96px,
+      220px 85px, 48px 92px, 68px 96px, 133px 101px, 165px 62px, 82px 71px;
+    background-image: radial-gradient(
+        circle,
+        var(--button-spell-end-color) 1px,
+        transparent 3px
+      ),
+      radial-gradient(
+        circle,
+        var(--button-spell-end-color) 1px,
+        transparent 4px
+      ),
+      radial-gradient(
+        circle,
+        transparent 1px,
+        var(--button-spell-color) 4px,
+        transparent 7px
+      ),
+      radial-gradient(
+        circle,
+        transparent 1px,
+        var(--button-spell-end-color) 2px,
+        transparent 3px
+      ),
+      radial-gradient(circle, var(--button-spell-color) 1px, transparent 5px),
+      radial-gradient(circle, var(--button-spell-color) 1px, transparent 5px),
+      radial-gradient(
+        circle,
+        var(--button-spell-end-color) 1px,
+        transparent 3px
+      ),
+      radial-gradient(
+        circle,
+        var(--button-spell-end-color) 2px,
+        transparent 5px
+      ),
+      radial-gradient(
+        circle,
+        var(--button-spell-end-color) 1px,
+        transparent 3px
+      ),
+      radial-gradient(
+        circle,
+        var(--button-spell-end-color) 1px,
+        transparent 4px
+      );
+    background-size: 0px 0px;
+  }
+}
